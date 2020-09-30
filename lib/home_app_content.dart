@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_appdzikir/home_app_content_dzikir.dart';
-import 'package:flutter_appdzikir/public_asset.dart';
 
 // ignore: camel_case_types
 class dzikirPagi extends StatelessWidget {
@@ -23,7 +22,7 @@ class dzikirPagi extends StatelessWidget {
           height: MediaQuery.of(context).size.height - 500,
           width: MediaQuery.of(context).size.width,
           decoration: BoxDecoration(
-            color: Color(0xF2353535),
+            color: Color(0xFF2b3752),
             borderRadius: BorderRadius.only(
               topRight: Radius.circular(65.0),
             ),
@@ -96,7 +95,7 @@ class dzikirPetang extends StatelessWidget {
           height: MediaQuery.of(context).size.height - 500,
           width: MediaQuery.of(context).size.width,
           decoration: BoxDecoration(
-            color: Color(0xF2353535),
+            color: Color(0xFF2b3752),
             borderRadius: BorderRadius.only(
               topRight: Radius.circular(65.0),
             ),
