@@ -1,8 +1,3 @@
-import 'package:flutter/material.dart';
-
-
-
-
 class Dzikir {
   String judul;
   String arab;
@@ -242,7 +237,12 @@ List<Dzikir> dzikirPetang = [
 ];
 
 
+int _dzikirIndex = 0;
 
+
+String getDzikir() {
+
+}
 
 
 

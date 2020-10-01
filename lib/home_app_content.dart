@@ -6,7 +6,7 @@ class dzikirPagi extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      alignment: Alignment.bottomCenter,
+      alignment: Alignment.bottomLeft,
       children: <Widget>[
         Container(
           height: MediaQuery.of(context).size.height,
@@ -19,8 +19,14 @@ class dzikirPagi extends StatelessWidget {
               )),
         ),
         Container(
-          height: MediaQuery.of(context).size.height - 500,
-          width: MediaQuery.of(context).size.width,
+          height: MediaQuery
+              .of(context)
+              .size
+              .height - 500,
+          width: MediaQuery
+              .of(context)
+              .size
+              .width - 20,
           decoration: BoxDecoration(
             color: Color(0xFF2b3752),
             borderRadius: BorderRadius.only(
@@ -29,14 +35,17 @@ class dzikirPagi extends StatelessWidget {
           ),
           child: Padding(
             padding: EdgeInsets.only(
-                left: MediaQuery.of(context).size.width - 120, top: 70),
+                left: MediaQuery
+                    .of(context)
+                    .size
+                    .width - 140, top: 70),
             child: Center(
               child: FlatButton(
                   onPressed: () {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => dzikir()
+                            builder: (context) => dzikirPagiContent()
                         )
                     );
                   },
@@ -60,8 +69,9 @@ class dzikirPagi extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.only(bottom: 100.0, right: 130),
-          child: Text('Dzikir Pagi', style: TextStyle(fontSize: 40,  color: Colors.white),),
+          padding: const EdgeInsets.only(bottom: 100.0, left: 20),
+          child: Text('Dzikir Pagi',
+            style: TextStyle(fontSize: 40, color: Colors.white),),
         ),
       ],
     );
@@ -79,11 +89,17 @@ class dzikirPetang extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
-      alignment: Alignment.bottomCenter,
+      alignment: Alignment.bottomLeft,
       children: <Widget>[
         Container(
-          height: MediaQuery.of(context).size.height,
-          width: MediaQuery.of(context).size.width,
+          height: MediaQuery
+              .of(context)
+              .size
+              .height,
+          width: MediaQuery
+              .of(context)
+              .size
+              .width,
           decoration: BoxDecoration(
               color: Color(0xFF00c6ed),
               image: DecorationImage(
@@ -92,8 +108,14 @@ class dzikirPetang extends StatelessWidget {
               )),
         ),
         Container(
-          height: MediaQuery.of(context).size.height - 500,
-          width: MediaQuery.of(context).size.width,
+          height: MediaQuery
+              .of(context)
+              .size
+              .height - 500,
+          width: MediaQuery
+              .of(context)
+              .size
+              .width - 20,
           decoration: BoxDecoration(
             color: Color(0xFF2b3752),
             borderRadius: BorderRadius.only(
@@ -102,14 +124,17 @@ class dzikirPetang extends StatelessWidget {
           ),
           child: Padding(
             padding: EdgeInsets.only(
-                left: MediaQuery.of(context).size.width - 120, top: 70),
+                left: MediaQuery
+                    .of(context)
+                    .size
+                    .width - 140, top: 70),
             child: Center(
               child: FlatButton(
                   onPressed: () {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => dzikir()
+                            builder: (context) => dzikirPetangContent()
                         )
                     );
                   },
@@ -133,8 +158,9 @@ class dzikirPetang extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.only(bottom: 100.0, right: 130),
-          child: Text('Dzikir Petang', style: TextStyle(fontSize: 40,color: Colors.white),),
+          padding: const EdgeInsets.only(bottom: 100.0, left: 20),
+          child: Text('Dzikir Petang',
+            style: TextStyle(fontSize: 40, color: Colors.white),),
         ),
       ],
     );
