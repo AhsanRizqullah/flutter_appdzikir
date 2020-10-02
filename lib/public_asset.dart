@@ -237,12 +237,6 @@ List<Dzikir> dzikirPetang = [
 ];
 
 
-int _dzikirIndex = 0;
-
-
-String getDzikir() {
-
-}
 
 
 
