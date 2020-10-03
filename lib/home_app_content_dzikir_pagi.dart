@@ -20,13 +20,23 @@ class _pageViewDzikirPagiState extends State<pageViewDzikirPagi> {
           String artiDzikir = dzikirPagi[index].arti;
 
           return Scaffold(
-            body: Column(
+            body: ListView(
               children: <Widget>[
-                Text(judulDzikir),
-                Text(arabDzikir),
-                Text(artiDzikir)
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      Text(judulDzikir, style: judulTextStyle,),
+                      SizedBox(height: 20,),
+                      Text(arabDzikir,  textAlign: TextAlign.right, style: arabTextStyle  ,),
+                      SizedBox(height: 20,),
+                      Text(artiDzikir)
+                    ],
+                  ),
+                ),
               ],
-            ),
+            )
           );
         },
       ),

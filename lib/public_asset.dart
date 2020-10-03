@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class Dzikir {
   String judul;
   String arab;
@@ -238,5 +240,6 @@ List<Dzikir> dzikirPetang = [
 
 
 
+final judulTextStyle = TextStyle(fontWeight: FontWeight.w400, );
 
-
+final arabTextStyle = TextStyle(fontWeight: FontWeight.bold, );
