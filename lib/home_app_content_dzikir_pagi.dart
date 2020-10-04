@@ -13,31 +13,42 @@ class _pageViewDzikirPagiState extends State<pageViewDzikirPagi> {
   Widget build(BuildContext context) {
     return Container(
       child: PageView.builder(
-        itemCount: dzikirPagi.length,
+        itemCount: dzikirPagiList.length,
         itemBuilder: (context, index) {
-          String judulDzikir = dzikirPagi[index].judul;
-          String arabDzikir = dzikirPagi[index].arab;
-          String artiDzikir = dzikirPagi[index].arti;
+          String judulDzikir = dzikirPagiList[index].judul;
+          String arabDzikir = dzikirPagiList[index].arab;
+          String artiDzikir = dzikirPagiList[index].arti;
 
           return Scaffold(
-            body: ListView(
-              children: <Widget>[
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: <Widget>[
-                      Text(judulDzikir, style: judulTextStyle,),
-                      SizedBox(height: 20,),
-                      Text(arabDzikir,  textAlign: TextAlign.right, style: arabTextStyle  ,),
-                      SizedBox(height: 20,),
-                      Text(artiDzikir)
-                    ],
-                  ),
+              body: ListView(
+            children: <Widget>[
+              Padding(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: <Widget>[
+                    Text(
+                      judulDzikir,
+                      style: judulTextStyle,
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Text(
+                      arabDzikir,
+                      textAlign: TextAlign.right,
+                      style: arabTextStyle,
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Text(artiDzikir)
+                  ],
                 ),
-              ],
-            )
-          );
+              ),
+            ],
+          ));
         },
       ),
     );

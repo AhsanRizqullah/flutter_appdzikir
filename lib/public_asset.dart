@@ -8,7 +8,7 @@ class Dzikir {
   Dzikir(this.judul, this.arab, this.arti);
 }
 
-List<Dzikir> dzikirPagi = [
+List<Dzikir> dzikirPagiList = [
   Dzikir(
     "Ta\'awudz",
     "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ",
@@ -127,7 +127,7 @@ List<Dzikir> dzikirPagi = [
       "Astagh-firullah wa atuubu ilaih. \n\nArtinya: \n\n\“Aku memohon ampun kepada Allah dan bertobat kepada-Nya.\” [Dibaca 100 x dalam sehari].[18]\n\n[18] HR. Bukhari no. 6307 dan Muslim no. 2702."),
 ];
 
-List<Dzikir> dzikirPetang = [
+List<Dzikir> dzikirPetangList = [
   Dzikir(
     "Ta\'awudz",
     "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ",
